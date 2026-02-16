@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+
+    <h2>HTML Login Form</h2>
+
+    <!-- 
+      The <form> element defines the form. 
+      The 'action' attribute specifies where to send the form-data when the form is submitted (e.g., a server-side script like "login.php").
+      The 'method' attribute specifies the HTTP method (POST is generally used for sensitive data like passwords).
+    -->
+    <form action="/login_action.php" method="post">
+        <!-- Group related elements for better structure and accessibility -->
+        <fieldset>
+            <legend>Login Information</legend>
+            
+            <!-- Label for the username input -->
+            <label for="username">Username:</label><br>
+            <!-- Input field for text, "required" means it must be filled before submission -->
+            <input type="text" id="username" name="username" required><br><br>
+
+            <!-- Label for the password input -->
+            <label for="password">Password:</label><br>
+            <!-- Input field for password (characters are masked) -->
+            <input type="password" id="password" name="password" required><br><br>
+
+            <!-- Submit button to send the form data -->
+            <input type="submit" value="Login">
+            <!-- Reset button to clear the form -->
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+
+</body>
+</html>
